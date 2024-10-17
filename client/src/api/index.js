@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = process.env.REACT_APP_API_URL || 'http://localhost:5000/posts';
+const url = 'https://social-media-web-backend.onrender.com';
 
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost);
